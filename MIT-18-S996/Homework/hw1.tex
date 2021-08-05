@@ -441,11 +441,11 @@ s =(1,4,9,16,25,36,49).
 \end{Exercise}
 \begin{Exercise}
 \sexc
-$|\{5,6,7\}|=3$
+$|\{5,6,7\}|=3$;
 \next
-$|\mathbb{N}|=\infty$
+$|\mathbb{N}|=\infty$;
 \next 
-$|\{n \in \mathbb{N} \mid n \leq 5\}| = 6$
+$|\{n \in \mathbb{N} \mid n \leq 5\}| = 6.$
 \endsexc
 \end{Exercise}
 \subsection{Commutative diagrams}
@@ -453,15 +453,47 @@ $|\{n \in \mathbb{N} \mid n \leq 5\}| = 6$
 \subsubsection{Types}
 \subsubsection{Aspects}
 \begin{Exercise}
-Valid Olog that captures the parent-child relationship:\\
+Olog that captures the parent-child relationship:\\
 % https://q.uiver.app/?q=WzAsMyxbMCwxLCJcXGJveGVke1xcdGV4dHthIHBlcnNvbn19Il0sWzEsMCwiXFxib3hlZHtcXHRleHR7bm8gY2hpbGRyZW59fSJdLFsxLDIsIlxcYm94ZWR7XFx0ZXh0e2EgY2hpbGR9fSJdLFswLDEsIiAgXFx0ZXh0e21heSBoYXZlfSJdLFswLDIsIlxcdGV4dHttYXkgaGF2ZX0iLDJdXQ==
 \begin{tikzcd}
 	& {\boxed{\text{no children}}} \\
 	{\boxed{\text{a person}}} \\
 	& {\boxed{\text{a child}}}
-	\arrow["{  \text{may have}}", from=2-1, to=1-2]
-	\arrow["{\text{may have}}"', from=2-1, to=3-2]
+	\arrow["{  \text{can have}}", from=2-1, to=1-2]
+	\arrow["{\text{can have}}"', from=2-1, to=3-2]
 \end{tikzcd}
+\end{Exercise}
+\begin{Exercise}
+Olog for human nuclear biological families:\\
+% https://q.uiver.app/?q=WzAsOSxbNSwyLCJcXGJveGVke1xcdGV4dHthIHBlcnNvbn19Il0sWzAsMCwiXFxib3hlZHtcXHRleHR7YSBtYW59fSJdLFswLDQsIlxcYm94ZWR7XFx0ZXh0e2Egd29tYW59fSJdLFszLDIsIlxcYm94ZWR7XFx0ZXh0e2EgY2hpbGR9fSJdLFsxLDIsIlxcYm94ZWR7XFx0ZXh0e2EgcGFyZW50fX0iXSxbMyw0XSxbMSwxLCJcXGNoZWNrbWFyayJdLFsxLDMsIlxcY2hlY2ttYXJrIl0sWzIsMl0sWzEsMCwiXFx0ZXh0e2lzfSJdLFsyLDAsIlxcdGV4dHtpc30iXSxbMSw0LCJcXHRleHR7aXN9Il0sWzIsNCwiXFx0ZXh0e2lzfSJdLFs0LDMsIlxcdGV4dHtoYXMgYX0iXSxbMywwLCJcXHRleHR7aXN9Il1d
+\begin{tikzcd}
+	{\boxed{\text{a man}}} \\
+	& \checkmark \\
+	& {\boxed{\text{a parent}}} & {} & {\boxed{\text{a child}}} && {\boxed{\text{a person}}} \\
+	& \checkmark \\
+	{\boxed{\text{a woman}}} &&& {}
+	\arrow["{\text{is}}", from=1-1, to=3-6]
+	\arrow["{\text{is}}", from=5-1, to=3-6]
+	\arrow["{\text{is}}", from=1-1, to=3-2]
+	\arrow["{\text{is}}", from=5-1, to=3-2]
+	\arrow["{\text{has a}}", from=3-2, to=3-4]
+	\arrow["{\text{is}}", from=3-4, to=3-6]
+\end{tikzcd}
+\end{Exercise}
+\begin{Exercise}
+Given x, an operational land-line phone, consider the following. We know that $x$ is an operational land-line phone,\\
+which is assigned to a phone number, which has an area code, which corresponds to a region\\
+that we'll call $P(x)$.\\
+We also know that $x$ is an operational land-line phone,
+which is a physical phone, which is currently located in a region\\
+that we'll call $Q(x)$.\\
+Fact: whenever $x$ is an operational land-line phone, we will have $P(x)=Q(x)$.\\ 
+\end{Exercise}
+\begin{Exercise}
+If the box  ``an operational land-line phone" was replaced with the box ``an operational mobile phone", the region in which it is currently located would not not always match the region corresponding to the mobile phone's phone number's area code and diagram would not commute.
+\end{Exercise}
+\begin{Exercise}
+
 \end{Exercise}
 \end{large}
 \end{document}
