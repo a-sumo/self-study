@@ -7,4 +7,4 @@
  
  Homework Assignments and notes:
  
- [Sets and functions, Commutative Diagrams, Ologs, Products and Coproducts](https://github.com/Armand-S/MIT-18-S996/blob/main/Homework/hw1.pdf)
+ [Sets and functions, Commutative Diagrams, Ologs, Products and Coproducts](https://github.com/a-sumo/self-study/main/MIT-18-S996/Homework/hw1.pdf)
