@@ -321,12 +321,8 @@
 
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{1}
+\usepackage{enumitem}
 
-\def\sub{\begin{itemize}\item}
-\def\sexc{\begin{enumerate}[a.)]\setlength{\itemsep}{.1cm}\setlength{\parskip}{.1cm}\item}
-\def\next{\item}
-\def\endsub{\end{itemize}}
-\def\endsexc{\end{enumerate}}
 %\ Add Extra Level of Section
 \usepackage{titlesec}
 
@@ -365,45 +361,47 @@ All of this is my own work.
 \begin{Exercise}
 The set of all sets of $A=\{1,2,3\}$, also called the power set of $A$, is \begin{align*}\mathcal{P}(A)=\{\emptyset,A,1,2,3,\{1,2\},\{1,3\},\{2,3\},\{1,2,3\}\} \end{align*}
 \end{Exercise}
-\subsubsection{Functions}\label{sec:funcs}
 \begin{Exercise}
-\sexc
+\begin{enumerate}[label=(\alph*)]
+\item
 Because each element of the set of photo-receptive cells ($PR$) connects to exactly one element of the set of retino-ganglial cells($RG$) and no elements of $PR$ connect to two elements of $RG$,  the only valid function would be from $PR\rightarrow RG $. 
-\next Each neuron forms at least one synapse with other neurons(otherwise it dies). Thus, the set of function-like connections between brain parts is a subset of the set of all biologically possible connections between brain parts.\\ It therefore seems plausible that the connection patterns that exists between other areas of the brain are function-like.
-\endsexc
+\item Each neuron forms at least one synapse with other neurons(otherwise it dies). Thus, the set of function-like connections between brain parts is a subset of the set of all biologically possible connections between brain parts.\\ It therefore seems plausible that the connection patterns that exists between other areas of the brain are function-like.
+\end{enumerate}
 \end{Exercise}
 
 \begin{Exercise}
 As depicted in (2.2), the elements of the codomain of $f$ that receive at least one arrows are $y_1,y_2,y_4$. Therefore $im(f)=\{y_1,y_2,y_4\}$.
 \end{Exercise}
 \begin{Exercise}
-\sexc
+\begin{enumerate}[label=(\alph*)]
+\item
 $A=\{1,2,3,4,5\}$ and $B=\{x,y\}$. \\
 Since each element in $A$ has $|B|$ choices, by the product rule, the total number of functions from $A$ to $B$ is \begin{align*}
 |\text{Hom}_\text{Set}(A,B)|=\underbrace{|B|\times |B| \times \cdots \times |B|}_{\text{$|A|$ times}} = 2^5 = 32.
 \end{align*}
-\next Similarly, since each element of $B$ has $|A|$ choices, the total number of functions from $B$ to $A$ is \begin{align*}
+\item Similarly, since each element of $B$ has $|A|$ choices, the total number of functions from $B$ to $A$ is \begin{align*}
 |\text{Hom}_\text{Set}(B,A)|=\underbrace{|A|\times |A| \times \cdots \times |A|}_{\text{$|B|$ times}} = 5^2 = 25.
 \end{align*}
-\endsexc
+\end{enumerate}
 \end{Exercise}
 \begin{Exercise}
-\sexc One set $A$ such that for all sets $X$ there's exactly one element in \begin{align*}\text{Hom}_\text{Set}(X,A) \text{\ is \ } A =\emptyset
+\begin{enumerate}[label=(\alph*)]
+\item One set $A$ such that for all sets $X$ there's exactly one element in \begin{align*}\text{Hom}_\text{Set}(X,A) \text{\ is \ } A =\emptyset
 \end{align*}. 
 This is because all sets contain the empty set and the empty set can only be mapped onto itself. 
-\next Similarly, one set $B$ such that for all sets $X$ there's exactly one element in $\text{Hom}_\text{Set}(B,X)$ is $B = \emptyset.$
-\endsexc
+\item Similarly, one set $B$ such that for all sets $X$ there's exactly one element in $\text{Hom}_\text{Set}(B,X)$ is $B = \emptyset.$
+\end{enumerate}
 \end{Exercise}
 \begin{Exercise}
 Let $X$ be a set with cardinal $n$. 
-\sexc 
-The first element of $X$ can be mapped to $n$ elements of $X$, the second to $(n-1)$, and so on and the $k$-th to $(n-(k-1))$, thus there are 
+ \begin{enumerate}[label=(\alph*)]
+\item The first element of $X$ can be mapped to $n$ elements of $X$, the second to $(n-1)$, and so on and the $k$-th to $(n-(k-1))$, thus there are 
 \begin{align*}
 n\times(n-1)\times \cdots \times 1= n!
 \end{align*} isomorphisms from $X$ to itself.
-\next 
+\item 
 By convention, $0!=1$ so the formula above holds when $n=0$ and $X=\emptyset$.
-\endsexc
+\end{enumerate}
 \end{Exercise}
 \begin{Exercise}
 There is no one-to-one correspondence between ``types" of the elements of the sets A and B so there's no obvious choice for which element of B will be associated to each element of the codomain of $f$. For this reason isn't one particular ``canonical funcion" $A \rightarrow \{1,2,3,4,5\}$
@@ -430,28 +428,28 @@ If $|X|<1$, then any set $A$ can be picked.\\
 Because the desired property must hold for all sets $X$, the only valid choices for $A$ are among sets containing only one element.
 \end{Exercise}
 \begin{Exercise}
-\sexc
+
+\begin{enumerate}[label=(\alph*)]\item
 If A = \{a,b,c,d\} and $f:\underline{10}\rightarrow A = \{a,b,c,c,b,a,d,d,a,b\}$, then $f(4)=c$.
-\next
+\item
 $s:\underline{7}\rightarrow\mathbb{N}$ given by $s(i)=i^2$ can be written as a sequence 
 \begin{align*}
 s =(1,4,9,16,25,36,49).
 \end{align*}
-\endsexc
+\end{enumerate}
 \end{Exercise}
 \begin{Exercise}
-\sexc
+\begin{enumerate}[label=(\alph*)]
+\item
 $|\{5,6,7\}|=3$;
-\next
+\item
 $|\mathbb{N}|=\infty$;
-\next 
+\item 
 $|\{n \in \mathbb{N} \mid n \leq 5\}| = 6.$
-\endsexc
+\end{enumerate}
 \end{Exercise}
 \subsection{Commutative diagrams}
 \subsection{Ologs}
-\subsubsection{Types}
-\subsubsection{Aspects}
 \begin{Exercise}
 Olog that captures the parent-child relationship:\\
 % https://q.uiver.app/?q=WzAsMyxbMCwxLCJcXGJveGVke1xcdGV4dHthIHBlcnNvbn19Il0sWzEsMCwiXFxib3hlZHtcXHRleHR7bm8gY2hpbGRyZW59fSJdLFsxLDIsIlxcYm94ZWR7XFx0ZXh0e2EgY2hpbGR9fSJdLFswLDEsIiAgXFx0ZXh0e21heSBoYXZlfSJdLFswLDIsIlxcdGV4dHttYXkgaGF2ZX0iLDJdXQ==
@@ -493,7 +491,173 @@ Fact: whenever $x$ is an operational land-line phone, we will have $P(x)=Q(x)$.\
 If the box  ``an operational land-line phone" was replaced with the box ``an operational mobile phone", the region in which it is currently located would not not always match the region corresponding to the mobile phone's phone number's area code and diagram would not commute.
 \end{Exercise}
 \begin{Exercise}
-
+\begin{enumerate}[label=(\alph*)]
+\item
+``a book": ``not clearly an image type"\\
+\item
+``a material that has been fabricated by a process of type T."
+\[f: \text{material} \rightarrow \text{material} \\ 
+\text{ : ``has been fabricated by a process of type T"}\]
+\item ``a bicycle owner"
+\[f: \text{owner} \rightarrow \text{owner} \text{ : ``owns a bicycle"}\]
+\item ``a child" : not clearly an image type. 
+\item ``a used book"
+\[f: \text{book}  \rightarrow \text{book} \\ 
+\text{ : ``is used"}\]
+\item ``an inhabited residence"
+\[f: \text{residence} \rightarrow \text{residence} \\ 
+\text{ : ``is inhabited"}\]
+\end{enumerate}
+\end{Exercise}
+\subsection{Products and coproducts}
+\begin{Exercise}
+$\{a,b,c,d\}\times\{1,2,3\}$ has $|\{a,b,c,d\}| \times |\{1,2,3\}| = 4 \times 3 =12$ items. 
+\end{Exercise}
+\begin{Exercise}
+\begin{enumerate}
+\item The following diagram commutes:
+% https://q.uiver.app/?q=WzAsNSxbMCwwLCIgXFxtYXRoYmJ7Wn1cXHRpbWVzXFxtYXRoYmJ7Wn1cXHRpbWVzXFxtYXRoYmJ7Wn0iXSxbNCwwLCJcXG1hdGhiYntafVxcdGltZXNcXG1hdGhiYntafSJdLFs0LDIsIlxcbWF0aGJie1p9Il0sWzAsMiwiXFxtYXRoYmJ7Wn1cXHRpbWVzXFxtYXRoYmJ7Wn0iXSxbMiwxLCJcXGNoZWNrbWFyayJdLFswLDEsIihhLGIsYylcXG1hcHN0byhhXFxjZG90IGIsYVxcY2RvdCBjKSJdLFsxLDIsIih4LHkpXFxtYXBzdG8geCt5Il0sWzAsMywiKGEsYixjKVxcbWFwc3RvIChhK2IsYykiLDJdLFszLDIsIih4LHkpXFxtYXBzdG8geHkiLDJdXQ==
+\[\begin{tikzcd}
+	{ \mathbb{Z}\times\mathbb{Z}\times\mathbb{Z}} &&&& {\mathbb{Z}\times\mathbb{Z}} \\
+	&& \checkmark \\
+	{\mathbb{Z}\times\mathbb{Z}} &&&& {\mathbb{Z}}
+	\arrow["{(a,b,c)\mapsto(a\cdot b,a\cdot c)}", from=1-1, to=1-5]
+	\arrow["{(x,y)\mapsto x+y}", from=1-5, to=3-5]
+	\arrow["{(a,b,c)\mapsto (a+b,c)}"', from=1-1, to=3-1]
+	\arrow["{(x,y)\mapsto xy}"', from=3-1, to=3-5]
+\end{tikzcd}\]
+\item The following diagram doesn't commute:
+% https://q.uiver.app/?q=WzAsMyxbMCwwLCJcXG1hdGhiYiB7Wn0iXSxbNCwwLCJcXG1hdGhiYntafVxcdGltZXNcXG1hdGhiYntafSJdLFs0LDIsIlxcbWF0aGJie1p9Il0sWzAsMSwieCBcXG1hcHN0byAoeCwwKSJdLFsxLDIsIihhLGIpXFxtYXBzdG8gYVxcY2RvdCBiIl0sWzAsMiwiXFx0ZXh0e2lkfV9cXG1hdGhiYntafSIsMl1d
+\[\begin{tikzcd}
+	{\mathbb {Z}} &&&& {\mathbb{Z}\times\mathbb{Z}} \\
+	\\
+	&&&& {\mathbb{Z}}
+	\arrow["{x \mapsto (x,0)}", from=1-1, to=1-5]
+	\arrow["{(a,b)\mapsto a\cdot b}", from=1-5, to=3-5]
+	\arrow["{\text{id}_\mathbb{Z}}"', from=1-1, to=3-5]
+\end{tikzcd}\]
+\item
+The following does:
+% https://q.uiver.app/?q=WzAsNCxbMCwwLCJcXG1hdGhiYiB7Wn0iXSxbNCwwLCJcXG1hdGhiYntafVxcdGltZXNcXG1hdGhiYntafSJdLFs0LDMsIlxcbWF0aGJie1p9Il0sWzMsMSwiXFxjaGVja21hcmsiXSxbMCwxLCJ4IFxcbWFwc3RvICh4LDEpIl0sWzEsMiwiKGEsYilcXG1hcHN0byBhXFxjZG90IGIiXSxbMCwyLCJcXHRleHR7aWR9X1xcbWF0aGJie1p9IiwyXV0=
+\[\begin{tikzcd}
+	{\mathbb {Z}} &&&& {\mathbb{Z}\times\mathbb{Z}} \\
+	&&& \checkmark \\
+	\\
+	&&&& {\mathbb{Z}}
+	\arrow["{x \mapsto (x,1)}", from=1-1, to=1-5]
+	\arrow["{(a,b)\mapsto a\cdot b}", from=1-5, to=4-5]
+	\arrow["{\text{id}_\mathbb{Z}}"', from=1-1, to=4-5]
+\end{tikzcd}\]
+\end{enumerate}
+\end{Exercise}
+\begin{Exercise}
+\begin{align*}
+|\text{Hom}_\text{Set}(A,X)| \times |\text{Hom}_\text{Set}(A,Y)| \\
+= |X|^{|A|} \times |Y|^{|A|} \\
+= (|X|\times|Y|)^{|A|}\\
+=|\text{Hom}_\text{Set}(A,X\times Y)|
+\end{align*}
+\end{Exercise}
+\begin{Exercise}
+\begin{enumerate}[label=(\alph*)]
+\item
+By the universal product rule, for any function $ f : X \times Y \mapsto X $ and a function $ g : X \times Y \mapsto Y$ there's a unique function $f \times g : X \mapsto Y \times Y \times X$. \\ 
+If $\pi_1 : X \times Y \mapsto X$ and $\pi_2 : X \times Y \mapsto Y$, we can define the swap function $s: X \times Y \rightarrow Y \times X$ as $s = \pi_2 \times \pi_1$, so that the diagram below commutes: 
+% https://q.uiver.app/?q=WzAsNixbMywwLCJYICBcXHRpbWVzIFkiXSxbNiwzLCJZIl0sWzAsMywiWCJdLFsxLDMsIlxcY2hlY2ttYXJrIl0sWzUsMywiXFxjaGVja21hcmsiXSxbMyw2LCJZIFxcdGltZXMgWCJdLFswLDIsIlxccGlfMSJdLFswLDEsIlxccGlfMiIsMl0sWzAsNSwicyA9IFxccGlfMiBcXHRpbWVzIFxccGlfMSIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFs1LDEsIlxccGlfMSJdLFs1LDIsIlxccGlfMiIsMl1d
+% https://q.uiver.app/?q=WzAsNixbMiwwLCJYICBcXHRpbWVzIFkiXSxbNCwzLCJZIl0sWzAsMywiWCJdLFsxLDMsIlxcY2hlY2ttYXJrIl0sWzMsMywiXFxjaGVja21hcmsiXSxbMiw2LCJZIFxcdGltZXMgWCJdLFswLDIsIlxccGlfMSJdLFswLDEsIlxccGlfMiIsMl0sWzAsNSwicyA9IFxccGlfMiBcXHRpbWVzIFxccGlfMSIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFs1LDEsIlxccGlfMSJdLFs1LDIsIlxccGlfMiIsMl1d
+\[\begin{tikzcd}
+	&& {X  \times Y} \\
+	\\
+	\\
+	X & \checkmark && \checkmark & Y \\
+	\\
+	\\
+	&& {Y \times X}
+	\arrow["{\pi_1}", from=1-3, to=4-1]
+	\arrow["{\pi_2}"', from=1-3, to=4-5]
+	\arrow["{s = \pi_2 \times \pi_1}"{description}, dashed, from=1-3, to=7-3]
+	\arrow["{\pi_1}", from=7-3, to=4-5]
+	\arrow["{\pi_2}"', from=7-3, to=4-1]
+\end{tikzcd}\]
+\item 
+To show that $s$ is a isomorphism, we must find a function $t : Y \times X  \mapsto  X \times Y $ such that:\\
+$t \circ s = \text{id}_{X\times Y}$ and\\
+$s \circ t = \text{id}_{Y\times X}$ \\
+The obvious choice is $t : Y \times X  \mapsto X \times Y$ defined as \\ $t = \pi_2 \times \pi_1$. It is obvious because for any projection $p$,  $p \circ p = \text{id}$.
+\end{enumerate}
+\end{Exercise}
+\begin{Exercise}
+Because a phone is either a cellphone or a land-line phone and not both at the same time, we can think of $\ulcorner a phone \urcorner $ as the coproduct of $\ulcorner a cellphone \urcorner $ and $\ulcorner a landline-phone \urcorner $ .
+\end{Exercise}
+\begin{Exercise}
+\begin{align*}
+\text{Hom}_{\text{Set}}(X,A) \sqcup \text{Hom}_{\text{Set}}(Y,A) = \text{Hom}_{\text{Set}}(X \sqcup Y,A)
+\end{align*}
+\end{Exercise}
+\subsection{Finite limits in Set}
+\begin{Exercise}
+A photon has both the properties of a wave and the properties of a particle, therefore we can label a photon that has the properties of a wave ``W" and one that has the properties of a particle ``P" and let $C = W \sqcup P $ be the set of photons that have the properties of a wave labeled as ``W" and those that have the properties of the properties of a particle labeled as ``P".
+\end{Exercise}
+\begin{Exercise}
+% https://q.uiver.app/?q=WzAsMTEsWzIsMCwiel8xIl0sWzIsMSwiel8yIl0sWzIsMiwiel8zIl0sWzAsMCwieF8xIl0sWzAsMSwieF8yIl0sWzAsMiwieF8zIl0sWzQsMCwieV8xIl0sWzQsMSwieV8yIl0sWzQsMiwieV8zIl0sWzIsMywiel80Il0sWzQsMywieV80Il0sWzMsMF0sWzYsMF0sWzQsMV0sWzcsMV0sWzUsMV0sWzgsOV0sWzEwLDFdXQ==
+\[\begin{tikzcd}
+	{x_1} && {z_1} && {y_1} \\
+	{x_2} && {z_2} && {y_2} \\
+	{x_3} && {z_3} && {y_3} \\
+	&& {z_4} && {y_4}
+	\arrow[from=1-1, to=1-3]
+	\arrow[from=1-5, to=1-3]
+	\arrow[from=2-1, to=2-3]
+	\arrow[from=2-5, to=2-3]
+	\arrow[from=3-1, to=2-3]
+	\arrow[from=3-5, to=4-3]
+	\arrow[from=4-5, to=2-3]
+\end{tikzcd}\]
+The pullback of the diagram $X \overset{f}{\longrightarrow} Z \overset{g}{\longleftarrow} Y$ presented is the subset $\{z_1\}$ of $Z$. For any other subset of $Z$, either one of the following is true:\\
+\begin{itemize}
+\item either $f^{-1}$ or $g^{-1}$ is not a function(ex: $f^{-1}(z_2)=x_2$ and $f^{-1}(z_2)=x_3$).\\
+\item some element of the chosen subset of $Z$ is not in the domain or codomain of either $f$,$g$,$f^{-1}$ or $g^{-1}$. 
+\end{itemize}
+\end{Exercise}
+\begin{Exercise}
+We're given the diagram of functions below:
+% https://q.uiver.app/?q=WzAsMyxbMCwxLCJYIl0sWzEsMSwiWiJdLFsxLDAsIlkiXSxbMCwxLCJmIiwyXSxbMiwxLCJnIl1d
+\[\begin{tikzcd}
+	& Y \\
+	X & Z
+	\arrow["f"', from=2-1, to=2-2]
+	\arrow["g", from=1-2, to=2-2]
+\end{tikzcd}\]
+\begin{enumerate}
+\item
+Suppose $Y = \emptyset$, because any function whose domain is the empty set has as codomain the emptyset, the fiber product $X \times_{Z}Y$ must be the empty set. 
+\item
+Suppose Y is any set but Z has exactly one element, then $X \times_{Z}Y$  is a set containing at most one element.
+\end{enumerate}
+\end{Exercise}
+\begin{Exercise}
+\begin{enumerate}
+\item A $\ulcorner$person whose favorite color is blue$\urcorner$ is a $\ulcorner$person$\urcorner$, not a $\ulcorner$color$\urcorner$.
+\item The labels seem inappropriate because a $\ulcorner$dog whose owner is a woman$\urcorner$ is not a $\ulcorner$person$\urcorner$.
+\item The labels seems inappropriate because the nature of the element of the set $\ulcorner$a good fit$\urcorner$ aren't fully specified.
+\end{enumerate}
+\end{Exercise}
+\begin{Exercise}
+% https://q.uiver.app/?q=WzAsNSxbMCwzLCJcXG92ZXJzZXR7RH17XFx0ZXh0e0ROQSBtYXRlcmlhbH19Il0sWzQsMywiXFxvdmVyc2V0e0Z9e1xcdGV4dHthIGZpbmdlcnByaW50fX0iXSxbMiw0LCJcXG92ZXJzZXR7SX17XFx0ZXh0e2FuIGlkZW50aXR5fX0iXSxbMiwwLCJEIFxcdGltZXNfRiBJXFx0ZXh0ezogYSBwYWlyIH0oZCxmKSJdLFsyLDIsIlxcb3ZlcnNldHtQfXtcXHRleHR7YSBwZXJzb259fSJdLFsxLDIsIlxcdGV4dHtkZWZpbmVzfSIsMl0sWzMsMCwiXFx0ZXh0e3lpZWxkcyBhcyB9ZCIsMix7ImN1cnZlIjoyfV0sWzMsMSwiXFx0ZXh0e3lpZWxkcyBhc30gZiIsMCx7ImN1cnZlIjotMn1dLFs0LDAsIlxcdGV4dHtoYXN9ICIsMl0sWzQsMSwiXFx0ZXh0e2hhc30iXSxbNCwzLCJcXHRleHR7Y29sbGVjdGlvbiBvZiBhIEROQSBzYW1wbGV9XFxcXCBcXHRleHR7YW5kIGEgZmluZ2VycHJpbnQgfSIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFswLDIsIlxcdGV4dHtkZWZpbmVzfSJdXQ==
+\[\begin{tikzcd}
+	&& {D \times_F I\text{: a pair }(d,f)} \\
+	\\
+	&& {\overset{P}{\text{a person}}} \\
+	{\overset{D}{\text{DNA material}}} &&&& {\overset{F}{\text{a fingerprint}}} \\
+	&& {\overset{I}{\text{an identity}}}
+	\arrow["{\text{defines}}"', from=4-5, to=5-3]
+	\arrow["{\text{yields as }d}"', curve={height=12pt}, from=1-3, to=4-1]
+	\arrow["{\text{yields as} f}", curve={height=-12pt}, from=1-3, to=4-5]
+	\arrow["{\text{has} }"', from=3-3, to=4-1]
+	\arrow["{\text{has}}", from=3-3, to=4-5]
+	\arrow["{\text{collection of a DNA sample}\\ \text{and a fingerprint }}"{description}, dashed, from=3-3, to=1-3]
+	\arrow["{\text{defines}}", from=4-1, to=5-3]
+\end{tikzcd}\]
 \end{Exercise}
 \end{large}
 \end{document}
